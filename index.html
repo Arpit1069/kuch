@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIT Projects</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    .nav-link {
+      color: #333;
+      font-weight: bold;
+    }
+    .nav-link.active {
+      color: #007bff;
+    }
+    .nav-tabs {
+      border-bottom: 2px solid #007bff;
+    }
+    .tab-content {
+      padding-top: 20px;
+    }
+    .tab-pane img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+    .project-description {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">VIT Projects</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#sdp">SDP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#edi">EDI</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#dt">DT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#course">Course Projects</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-3">
+  <div class="tab-content">
+    <div id="sdp" class="tab-pane fade">
+      <h3>SDP Projects</h3>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="SDP Project 1">
+          <p class="project-description">SDP Project 1 Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="SDP Project 2">
+          <p class="project-description">SDP Project 2 Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="SDP Project 3">
+          <p class="project-description">SDP Project 3 Description</p>
+        </div>
+      </div>
+    </div>
+    <div id="edi" class="tab-pane fade">
+      <h3>EDI Projects</h3>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="EDI Project A">
+          <p class="project-description">EDI Project A Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="EDI Project B">
+          <p class="project-description">EDI Project B Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="EDI Project C">
+          <p class="project-description">EDI Project C Description</p>
+        </div>
+      </div>
+    </div>
+    <div id="dt" class="tab-pane fade">
+      <h3>DT Projects</h3>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="DT Project X">
+          <p class="project-description">DT Project X Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="DT Project Y">
+          <p class="project-description">DT Project Y Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="DT Project Z">
+          <p class="project-description">DT Project Z Description</p>
+        </div>
+      </div>
+    </div>
+    <div id="course" class="tab-pane fade">
+      <h3>Course Projects</h3>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="Course Project Alpha">
+          <p class="project-description">Course Project Alpha Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="Course Project Beta">
+          <p class="project-description">Course Project Beta Description</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <img src="https://via.placeholder.com/300" alt="Course Project Gamma">
+          <p class="project-description">Course Project Gamma Description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+    // Activate Bootstrap tab via JavaScript
+    $('.nav-link').on('click', function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  });
+</script>
+
+</body>
+</html>
